@@ -1,4 +1,6 @@
 package org.example;
 
-public class Mediator {
+public interface Mediator {
+    void registrar(Dispositivo dispositivo);
+    void notificar(Dispositivo remetente, String evento);
 }
